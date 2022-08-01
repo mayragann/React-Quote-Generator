@@ -1,5 +1,5 @@
 {
-  "name": "react-game",
+  "name": "quote-generator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
