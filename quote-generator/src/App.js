@@ -1,5 +1,6 @@
 import Footer from "./Components/Footer/Footer";
 import Quote from "./Components/Quote/Quote";
+import TestHookCounter from "./Components/TestHookCounter/TestHookCounter";
 
 function App() {
   const data = [
@@ -45,6 +46,7 @@ function App() {
       <h1>Quote Generator</h1>
       <Quote data={data} />
       <button>Generate Quote</button>
+      {/* <TestHookCounter /> */}
       <Footer />
     </div>
   );
