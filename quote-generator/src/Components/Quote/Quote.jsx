@@ -5,8 +5,8 @@ const Quote = ({data}) => {
         <div>
 
             <blockquote>
-            {data[0].quote}
-                <p>-{data[0].name}</p>
+            {data.quote}
+                <p>-{data.name}</p>
             </blockquote>
         </div>
     )

@@ -1,51 +1,29 @@
+import { useState, useEffect } from "react";
 import Footer from "./Components/Footer/Footer";
 import Quote from "./Components/Quote/Quote";
 import TestHookCounter from "./Components/TestHookCounter/TestHookCounter";
+import UpdateTitle from "./Components/UpdateTitle/UpdateTitle";
+import { data } from "./Components/Data/Data";
 
 function App() {
-  const data = [
-    {
-      name: "Shepard",
-      quote: '"I promise that you will get your homeworld."',
-    },
-    {
-      name: "Javik",
-      quote: '"Throw It Out The Airlock."',
-    },
-    {
-      name: "Thane",
-      quote:
-        '"The Measure Of An Individual Can Be Difficult To Discern By Actions Alone."',
-    },
-    {
-      name: "Anderson",
-      quote: '"You Did Good Son. I am Proud Of You."',
-    },
-    {
-      name: "Shepard",
-      quote: '"Nobody Ever Fell In Love Without Being A Little Brave."',
-    },
-    {
-      name: "Garrus",
-      quote:
-        '"It is So Much Easier To See The World In Black And White. Gray? I Do not Know What To Do With Gray..."',
-    },
-    {
-      name: "Illusive Man",
-      quote:
-        '"There, Earth. I Wish You Could See It Like I Do, Shepard. It is So... Perfect."',
-    },
-    {
-      name: "Tali",
-      quote: '"Emergency. Induction. Port."',
-    },
-  ];
+  const [quote, setQuote] = useState(data[1]);
+  const [isLoading, setIsLoading] = useState(true);
+  const randomise = () => {
+    const randomNumber = Math.floor(Math.random() * data.length);
+    setQuote(data[randomNumber]);
+  };
+  //math.floor makes it a whole number, and the equation above goes through the data at random
+  useEffect(() => {
+    randomise();
+    setIsLoading(false);
+  }, []);
 
   return (
     <div className="App">
+      {/* <UpdateTitle /> */}
       <h1>Quote Generator</h1>
-      <Quote data={data} />
-      <button>Generate Quote</button>
+      {isLoading ? <p>Quote now loading...</p> : <Quote data={quote} />}
+      <button onClick={randomise}>Generate Quote</button>
       {/* <TestHookCounter /> */}
       <Footer />
     </div>
