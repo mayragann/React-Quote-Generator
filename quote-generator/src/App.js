@@ -6,7 +6,7 @@ import UpdateTitle from "./Components/UpdateTitle/UpdateTitle";
 import { data } from "./Components/Data/Data";
 
 function App() {
-  const [quote, setQuote] = useState(data[1]);
+  const [quote, setQuote] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const randomise = () => {
     const randomNumber = Math.floor(Math.random() * data.length);

@@ -23,7 +23,7 @@ export const data = [
     {
       name: "Garrus",
       quote:
-        '"It is So Much Easier To See The World In Black And White. Gray? I Do not Know What To Do With Gray..."',
+        `"It's So Much Easier To See The World In Black And White. Gray? I Don't Know What To Do With Gray..."`,
     },
     {
       name: "Illusive Man",
