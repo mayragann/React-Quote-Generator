@@ -4,6 +4,8 @@ import Quote from "./Components/Quote/Quote";
 import TestHookCounter from "./Components/TestHookCounter/TestHookCounter";
 import UpdateTitle from "./Components/UpdateTitle/UpdateTitle";
 import { data } from "./Components/Data/Data";
+import { characterData } from "./Components/Data/CharacterData"
+import CharacterBios from "./Components/CharacterBios/CharacterBios";
 
 function App() {
   const [quote, setQuote] = useState();
@@ -23,8 +25,9 @@ function App() {
       {/* <UpdateTitle /> */}
       <h1>Quote Generator</h1>
       {isLoading ? <p>Quote now loading...</p> : <Quote data={quote} />}
-      <button onClick={randomise}>Generate Quote</button>
       {/* <TestHookCounter /> */}
+      <button onClick={randomise}>Generate Quote</button>
+      <CharacterBios characterData={characterData} />
       <Footer />
     </div>
   );
