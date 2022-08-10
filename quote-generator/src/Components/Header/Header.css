@@ -1,0 +1,31 @@
+.navbar-main{
+    background-color: rgb(48, 92, 159);
+    width:100%;
+    height: auto;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.navbar-main img {
+    height:80px;
+    width: auto;
+    padding: 10px;
+}
+@media (max-width:1000px){
+    .navbar-main{
+        height:auto;
+    }
+
+    .navbar-main img {
+        height:50px;
+        width: auto;
+    }
+
+
+}

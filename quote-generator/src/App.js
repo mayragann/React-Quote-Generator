@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import Footer from "./Components/Footer/Footer";
 import Quote from "./Components/Quote/Quote";
-import TestHookCounter from "./Components/TestHookCounter/TestHookCounter";
-import UpdateTitle from "./Components/UpdateTitle/UpdateTitle";
+
 import { data } from "./Components/Data/Data";
 import { characterData } from "./Components/Data/CharacterData"
 import CharacterBios from "./Components/CharacterBios/CharacterBios";
+import Header from "./Components/Header/Header";
 
 function App() {
   const [quote, setQuote] = useState();
@@ -22,10 +22,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <UpdateTitle /> */}
+      <Header />
       <h1>Quote Generator</h1>
       {isLoading ? <p>Quote now loading...</p> : <Quote data={quote} />}
-      {/* <TestHookCounter /> */}
       <button onClick={randomise}>Generate Quote</button>
       <CharacterBios characterData={characterData} />
       <Footer />
