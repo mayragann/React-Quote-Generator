@@ -1,14 +1,19 @@
 import React from 'react'
+import {Card, CardTitle, CardText} from 'reactstrap';
 
-const Quote = ({data}) => {
+const Quote = ({data}) => { // const quoteEls = data.map((quote) => <li class="quote">{quote.name}</li>);
     return (
-        <div>
-
-            <blockquote>
-            {data.quote}
-                <p>-{data.name}</p>
-            </blockquote>
-        </div>
+        <div> {
+            data.map((quote) => <Card body>
+                <CardTitle tag="h5">
+                    {
+                    quote.name
+                } </CardTitle>
+                      <CardText>
+        {quote.quote}
+      </CardText>
+            </Card>)
+        } </div>
     )
 }
 
