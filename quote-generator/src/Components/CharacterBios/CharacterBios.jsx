@@ -1,27 +1,21 @@
 import React from 'react'
 
+import CharacterBiosinfo from './CharacterBiosinfo';
+
 const CharacterBios = ({characterData}) => {
   return (
     <div>
-   <table >
-        <thead>
 
-        </thead>
-        <tbody>
-        {characterData.map((data) =>{
+        {characterData.map((data,index) =>{
             return (
             <>
-            <tr className="top">
-                <td className="name">{data.name}</td>
-            </tr>
-            <tr >  
-                <td className="post">{data.bio}</td>
-            </tr>
+            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <CharacterBiosinfo key={index} {...data}/>
+            </div>
             </>
             );
           })}
-        </tbody>
-      </table>
+
     </div>
   )
 }

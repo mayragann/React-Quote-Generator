@@ -343,8 +343,8 @@ export const data = [
         quote: `"You are not Saren. Rudimentary creatures of blood and flesh, you touch my mind, fumbling in ignorance, incapable of 
         understanding. There is a realm of existence so far beyond your own you cannot even imagine it. I am beyond your comprehension."`
     }, {
-        name: `"There, Earth. I wish you could see it like I do, Shepard. It's so perfect."`,
-        quote: `Illusive Man`
+        name: `Illusive Man`,
+        quote: `"There, Earth. I wish you could see it like I do, Shepard. It's so perfect."`
     }, {
         name: "Garrus",
         quote: `"I'm Garrus Vakarian and this is now my favorite spot on the Citadel."`
@@ -596,5 +596,3 @@ export const data = [
         quote: `"Shepard, damned if you aren't a sight for sore eyes."`
     },
 ];
-
-
