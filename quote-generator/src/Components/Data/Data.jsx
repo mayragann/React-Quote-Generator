@@ -143,7 +143,7 @@ export const data = [
         quote: `"You wither and die.`
     }, {
         name: "Tali'Zorah nar Rayya",
-        quote: `"What is it about you that makes people think we enjoy being in harm;s way?`
+        quote: `"What is it about you that makes people think we enjoy being in harms way?`
     }, {
         name: "Sovereign",
         quote: `"We have no beginning. We have no end. We are infinite. Millions of years after your civilization has 

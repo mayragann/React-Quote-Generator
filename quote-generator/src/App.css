@@ -1,3 +1,8 @@
+@font-face {
+  font-family: massEffect;
+  src: url(./Mass-Effect-Font/me123.ttf); 
+}
+
 .main{
   display: flex;
   flex-direction: column;
@@ -9,5 +14,6 @@
 }
 
 .body{
-  width: 90%;
+  width: 80%;
+
 }

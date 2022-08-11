@@ -10,7 +10,7 @@ import Header from "./Components/Header/Header";
 function App() {
   const [quotes, setQuotes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const numberOfQuotes = 3;
+  const numberOfQuotes = 2;
 
   const randomise = () => {
     const tempData = [...data];
@@ -34,8 +34,6 @@ function App() {
         <Header />
       <div className="main">
         <div className="body">
-
-        <h1>Quote Generator</h1>
         {isLoading ? <p>Quote now loading...</p> : <Quote data={quotes} />}
         <button onClick={randomise}>Generate Quote</button>
         <CharacterBios characterData={characterData} />
