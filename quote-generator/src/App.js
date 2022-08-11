@@ -34,8 +34,9 @@ function App() {
         <Header />
       <div className="main">
         <div className="body">
+          <div className="intro"> Generate Quotes From This Spectacular Universe</div>
         {isLoading ? <p>Quote now loading...</p> : <Quote data={quotes} />}
-        <button onClick={randomise}>Generate Quote</button>
+        <button className="myButton" onClick={randomise}>Generate Quote</button>
         <CharacterBios characterData={characterData} />
         </div>
         <Footer />

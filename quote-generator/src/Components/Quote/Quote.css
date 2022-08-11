@@ -1,53 +1,43 @@
-.card-information{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    padding: 20px;
-
+.card-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  padding: 20px;
 }
-.card{
-   
-    padding: 20px;
-    color: white;
-    background-color: rgb(48, 92, 159);
-    -webkit-box-shadow: 5px 5px 8px 2px rgba(48, 92, 159, 0.421); 
-    -moz-box-shadow: -13px 4px 8px 2px  rgb(48, 92, 159, 0.421); 
-    box-shadow: 5px 5px 8px 2px  rgb(48, 92, 159, 0.421);
-    cursor: pointer;
-    margin: 10px;
-    border-radius: 15px;
+.card {
+  padding: 20px;
+  color: white;
+  background-color: rgb(48, 92, 159);
+  -webkit-box-shadow: 5px 5px 8px 2px rgba(48, 92, 159, 0.421);
+  -moz-box-shadow: -13px 4px 8px 2px rgb(48, 92, 159, 0.421);
+  box-shadow: 5px 5px 8px 2px rgb(48, 92, 159, 0.421);
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 15px;
 }
 
-.title{
-    font-size: 2em;
-    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+.title {
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
 
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
 }
 
-@media (max-width:1000px){
-    .card-information{
-
-        flex-direction:column;
-
-    }
-    .title {
-        font-size: 1.5em;
-
-
-        
-    }
-    .card p {
-        font-size: .85em;
-    }
-
-
+@media (max-width: 1000px) {
+  .card-information {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .card p {
+    font-size: 0.85em;
+  }
 }
