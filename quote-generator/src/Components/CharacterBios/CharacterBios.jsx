@@ -1,15 +1,16 @@
 import React from 'react'
+import "./CharacterBios.css"
 
 import CharacterBiosinfo from './CharacterBiosinfo';
 
 const CharacterBios = ({characterData}) => {
   return (
-    <div>
+    <div className='container character' >
 
         {characterData.map((data,index) =>{
             return (
             <>
-            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div  >
                 <CharacterBiosinfo key={index} {...data}/>
             </div>
             </>
