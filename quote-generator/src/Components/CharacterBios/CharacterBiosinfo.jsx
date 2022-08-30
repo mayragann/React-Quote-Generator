@@ -13,9 +13,9 @@ const CharacterBiosinfo = ({name, bio, bioPicture}) => {
 
     return (
         <>
-        <Button variant="primary" onClick={handleShow}>
+        <div className='modal-button' onClick={handleShow}>
           {name}
-        </Button>
+        </div>
   
         <Modal show={show} onHide={handleClose} >
           <Modal.Header closeButton>

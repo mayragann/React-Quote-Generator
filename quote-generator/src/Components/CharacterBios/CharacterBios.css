@@ -9,6 +9,22 @@
     text-align: center;
     justify-content: space-between;
     gap: 10px;
-
-
 }
+
+.modal-button {
+    font-size:15px;
+    font-family:Arial;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#124d77;
+
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    text-shadow:inset 0px 1px 0px #154682;
+    background:linear-gradient(#007dc1, #0061a7);
+  }
+  
+  .modal-button:hover {
+    background: linear-gradient(#0061a7, #007dc1);
+  }
