@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.css';
 import './CharacterBios.css';
@@ -13,9 +12,9 @@ const CharacterBiosinfo = ({name, bio, bioPicture}) => {
 
     return (
         <>
-        <div className='modal-button' onClick={handleShow}>
+        <button className="modal-button" onClick={handleShow}>
           {name}
-        </div>
+        </button>
   
         <Modal show={show} onHide={handleClose} >
           <Modal.Header closeButton>
@@ -26,9 +25,9 @@ const CharacterBiosinfo = ({name, bio, bioPicture}) => {
                 alt="about_image"/>
           <Modal.Body>{bio} </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <button className="mybutton" onClick={handleClose}>
               Close
-            </Button>
+            </button>
 
           </Modal.Footer>
         </Modal>
