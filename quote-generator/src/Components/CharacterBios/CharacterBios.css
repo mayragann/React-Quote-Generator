@@ -26,7 +26,17 @@
   background:#1692df;
   
 }
-  
+#renegade .modal-button{
+  border-color:#124d77;
+  border-radius: 30px;
+  box-shadow:inset 0px 1px 0px 0px #CE3D3D;
+  text-shadow:inset 0px 1px 0px #CE3D3D;
+  background-color: #CE3D3D;
+} 
+
+#renegade .modal-button:hover{
+  background: linear-gradient(#CE3D3D, #7c1f1f);
+}
 .modal-button:hover {
   background: linear-gradient(#0061a7, #1692df);
 }

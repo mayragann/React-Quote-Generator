@@ -39,6 +39,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{theme, handleChangeTheme}}>
+      {/* needs to be in main-theme-comp for it to toggle */}
     <div className="main-theme-compo" id={theme}>
 
     <div className="App">

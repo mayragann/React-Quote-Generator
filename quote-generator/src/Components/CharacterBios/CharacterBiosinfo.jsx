@@ -25,7 +25,7 @@ const CharacterBiosinfo = ({name, bio, bioPicture}) => {
                 alt="about_image"/>
           <Modal.Body>{bio} </Modal.Body>
           <Modal.Footer>
-            <button className="mybutton" onClick={handleClose}>
+            <button className="myButton" onClick={handleClose}>
               Close
             </button>
 
