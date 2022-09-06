@@ -7,6 +7,7 @@ import { data } from "./Components/Data/Data";
 import { characterData } from "./Components/Data/CharacterData";
 import CharacterBios from "./Components/CharacterBios/CharacterBios";
 import Header from "./Components/Header/Header";
+import NavbarMobile from "./Components/NavbarMobile/NavbarMobile";
 
 export const ThemeContext = createContext(null)
 
@@ -44,6 +45,7 @@ function App() {
 
     <div className="App">
         <Header theme={theme} handleChangeTheme={handleChangeTheme}/>
+        <NavbarMobile theme={theme} handleChangeTheme={handleChangeTheme}/>
       <div className="main">
         <div className="body">
           <div className="intro"> Generate Quotes From This Spectacular Universe</div>

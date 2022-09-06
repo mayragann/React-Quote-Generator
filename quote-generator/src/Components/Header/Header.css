@@ -44,13 +44,7 @@
 
 @media (max-width:1000px){
     .navbar-main{
-        height:auto;
-        position:-webkit-sticky;
-        position: sticky;
-        top: 0;
-        box-shadow: 5px 5px 8px 2px  rgba(20, 40, 71, 0.421);
-        -webkit-box-shadow: 5px 5px 8px 2px rgba(20, 40, 71, 0.421); 
-        -moz-box-shadow: -13px 4px 8px 2px  rgb(20, 40, 71, 0.421); 
+display:none;
     }
 
     .navbar-main img {
