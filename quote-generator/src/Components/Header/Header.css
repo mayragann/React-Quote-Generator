@@ -31,10 +31,7 @@
     background-color:   rgb(212, 223, 240);
     text-align: center;
     vertical-align: middle;
-    
     position: fixed;
-
- 
     margin-top:250px;
     border-radius: 7px;
     cursor: pointer;
@@ -57,7 +54,7 @@
     }
 
     .navbar-main img {
-        height:50px;
+        height:60px;
         width: auto;
     }
     .theme-change{

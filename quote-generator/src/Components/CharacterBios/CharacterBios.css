@@ -55,5 +55,13 @@
     border-radius:50%;
     font-size: 14px;
   }
+  #renegade .modal-button{
+
+    width: 100px;
+    height:100px;
+    white-space: normal;
+    border-radius:50%;
+    font-size: 14px;
+  }
   
 }
