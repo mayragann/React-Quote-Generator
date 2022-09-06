@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
+
 import Footer from "./Components/Footer/Footer";
 import Quote from "./Components/Quote/Quote";
 import "./App.css"
@@ -7,10 +8,17 @@ import { characterData } from "./Components/Data/CharacterData";
 import CharacterBios from "./Components/CharacterBios/CharacterBios";
 import Header from "./Components/Header/Header";
 
+export const ThemeContext = createContext(null)
+
 function App() {
   const [quotes, setQuotes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const numberOfQuotes = 2;
+
+  const [theme, setTheme] = useState("paragon");
+  const handleChangeTheme = () => {
+    setTheme((current)=>(current === "paragon" ? "renegade":"paragon"))
+  }
 
   const randomise = () => {
     const tempData = [...data];
@@ -30,18 +38,23 @@ function App() {
  
 
   return (
+    <ThemeContext.Provider value={{theme, handleChangeTheme}}>
+    <div className="main-theme-compo" id={theme}>
+
     <div className="App">
-        <Header />
+        <Header theme={theme} handleChangeTheme={handleChangeTheme}/>
       <div className="main">
         <div className="body">
           <div className="intro"> Generate Quotes From This Spectacular Universe</div>
         {isLoading ? <p>Quote now loading...</p> : <Quote data={quotes} />}
         <button className="myButton" onClick={randomise}>Generate Quote</button>
-        <CharacterBios characterData={characterData} />
+        <CharacterBios characterData={characterData} theme={theme} handleChangeTheme={handleChangeTheme} />
         </div>
         <Footer />
       </div>
     </div>
+    </div>
+    </ThemeContext.Provider>
   );
 }
 

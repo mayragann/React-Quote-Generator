@@ -23,12 +23,12 @@
   border-radius: 30px;
   box-shadow:inset 0px 1px 0px 0px #54a3f7;
   text-shadow:inset 0px 1px 0px #154682;
-  background:linear-gradient(#007dc1, #0061a7);
+  background:#1692df;
   
 }
   
 .modal-button:hover {
-  background: linear-gradient(#0061a7, #007dc1);
+  background: linear-gradient(#0061a7, #1692df);
 }
 @media (max-width: 800px){
   .character {
