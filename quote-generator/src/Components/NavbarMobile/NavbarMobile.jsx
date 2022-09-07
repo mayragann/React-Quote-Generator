@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Switch from "react-switch";
+
 import "./NavbarMobile.css"
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "./../Logo/Mass_Effect_logo_PNG1.png"

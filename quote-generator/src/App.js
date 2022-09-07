@@ -8,6 +8,7 @@ import { characterData } from "./Components/Data/CharacterData";
 import CharacterBios from "./Components/CharacterBios/CharacterBios";
 import Header from "./Components/Header/Header";
 import NavbarMobile from "./Components/NavbarMobile/NavbarMobile";
+import ScrollToTop from "react-scroll-to-top";
 
 export const ThemeContext = createContext(null)
 
@@ -57,6 +58,15 @@ function App() {
       </div>
     </div>
     </div>
+    
+    <ScrollToTop
+        smooth
+        color="white"
+        height="20"
+        width="20"
+        style={{ borderRadius: "90px", backgroundColor: "black" }}
+      />
+  
     </ThemeContext.Provider>
   );
 }
